@@ -9,6 +9,7 @@ tests: bin/py.test
 
 bin/pserve bin/py.test: bin/python bin/pip setup.py
 	bin/pip install zope.sqlalchemy --no-deps -i https://pypi.python.org/simple/
+	bin/pip install -e git+https://github.com/stefanw/python-oauth2.git#egg=oauth2
 	bin/python setup.py dev
 	git submodule update --init
 	bin/pip install -e src/*

@@ -1,20 +1,29 @@
 # module for project-specific development
 # please rename and start hacking...
 
-from pyramid.settings import asbool
 from transaction import commit
 from restbase import configure as base_configure, db_setup, utils
+from appartmapp.immoscoutapi import ImmoScout24Api
 
 
 project_name = utils.get_distribution().project_name
+
+def is24api(request):
+    settings = request.registry.settings
+    return ImmoScout24Api(dict(
+        consumer_key=settings['is24.consumer_key'],
+        consumer_secret=settings['is24.consumer_secret'],
+        access_token=settings['is24.access_token'],
+        access_secret=settings['is24.access_secret'],
+    ))
 
 
 def configure(global_config, **settings):
     config = base_configure(global_config, **settings)
     # add additional configuration here...
-    if asbool(settings.get('debug', False)):
-        config.add_static_view('/', '%s:../../frontend/app/' % project_name)
     config.scan()
+
+    config.set_request_property(is24api, name="is24api", reify=True)
     config.commit()
     return config
 

@@ -81,20 +81,3 @@ class ImmoScout24Api(object):
 
     def expose_attachment(self, exposeid, attachmentid):
         return self.get('/restapi/api/search/v1.0/expose/%s/attachment/%s', (exposeid, attachmentid))
-
-
-if __name__ == '__main__':
-    import sys
-    (IMMOSCOUT_REST_KEY, IMMOSCOUT_REST_SECRET, IMMOSCOUT_ACCESS_TOKEN,
-        IMMOSCOUT_ACCESS_TOKEN_SECRET) = sys.argv[1:]
-    is24 = ImmoScout24Api({
-        'consumer_key': IMMOSCOUT_REST_KEY,
-        'consumer_secret': IMMOSCOUT_REST_SECRET,
-        'access_token': IMMOSCOUT_ACCESS_TOKEN,
-        'access_secret': IMMOSCOUT_ACCESS_TOKEN_SECRET
-    })
-    result = is24.radius_search('apartmentrent', '51.5','10.5','500')
-    result = result['resultlist.resultlist']['resultlistEntries'][0]['resultlistEntry']
-    result = [sanitize_is24(item) for item in result]
-    #res = is24.expose(62235557)
-    print json.dumps(result, indent=4)
