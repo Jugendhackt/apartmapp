@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-name = 'foobar'
+name = 'appartmapp'
 version = 'v1-dev'
 
 setup(name=name,
