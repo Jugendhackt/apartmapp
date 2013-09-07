@@ -10,12 +10,14 @@ project_name = utils.get_distribution().project_name
 
 def is24api(request):
     settings = request.registry.settings
-    return ImmoScout24Api(dict(
+    return ImmoScout24Api(auth=dict(
         consumer_key=settings['is24.consumer_key'],
         consumer_secret=settings['is24.consumer_secret'],
         access_token=settings['is24.access_token'],
         access_secret=settings['is24.access_secret'],
-    ))
+        ),
+        domain='http://rest.immobilienscout24.de',
+    )
 
 
 def configure(global_config, **settings):
