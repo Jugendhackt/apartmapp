@@ -1,7 +1,7 @@
 from cornice.service import Service
 
 from appartmapp.immoscoutapi import sanitize_is24
-from .. import path
+from restbase import path
 
 search = Service(name='search', path=path('search'), renderer='json')
 
