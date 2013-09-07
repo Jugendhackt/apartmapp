@@ -14,7 +14,7 @@ bin/pserve bin/py.test: bin/python bin/pip setup.py
 	bin/pip install -e src/*
 
 bin/python bin/pip:
-	virtualenv-$(version) .
+	virtualenv --python=python$(version) .
 
 initdb: name = $(shell bin/python setup.py --name)
 initdb: bin/python
