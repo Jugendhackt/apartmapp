@@ -15,6 +15,14 @@ angular.module('frontendApp', [])
         templateUrl: 'views/signup.html',
         controller: 'SignupCtrl'
       })
+      .when('/impressum', {
+        templateUrl: 'views/impressum.html',
+        controller: 'LinksCtrl'
+      })
+      .when('/links', {
+        templateUrl: 'views/links.html',
+        controller: 'LinksCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
