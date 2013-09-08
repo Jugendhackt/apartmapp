@@ -6,7 +6,7 @@ from restbase import configure as base_configure, db_setup, utils
 from appartmapp.immoscoutapi import ImmoScout24Api
 
 
-project_name = utils.get_distribution().project_name
+project_name = 'appartmapp'
 
 def is24api(request):
     settings = request.registry.settings
