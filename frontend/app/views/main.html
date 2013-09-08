@@ -51,12 +51,12 @@
 
 
 <ul class="large-block-grid-2 small-block-grid-2">
-  <li>Titel 
+  <li ng-repeat="result in searchResults"> 
   <p>
-  Beschreibung
+  {{result.description}}
   </p> 
   <p>
-  Button/mehr Info  
+  {{result.street}} {{result.houseNumber}}
   </p>
   </li>
   <li>
