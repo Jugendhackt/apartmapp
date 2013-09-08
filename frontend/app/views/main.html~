@@ -65,7 +65,7 @@
       <p>
       {{result.street}} {{result.houseNumber}}, {{result.postcode}} {{result.city}}
       <p>
-      <a href="{{result.information}}"><img src="images/informationen.png"></a>
+      <a href="http://www.immobilienscout24.de/expose/{{result.information}}"><img src="images/informationen.png"></a>
       </p>
     </li>
   </ul>
@@ -89,23 +89,3 @@
 
 
 
-<<<<<<< Updated upstream
-=======
-<HR COLOR=blue WIDTH=40 SIZE=40>
-<table summary="" >
-	<tr>
-		<td>
-		<a href="#/signup">Registrieren</a>
-		</td>
-		<td>
-		<a href="">Impressum</a>
-		</td>
-		<td>
-		<a href="">Links</a>
-		</td>
-	</tr>		
-</table>
-
-
-
->>>>>>> Stashed changes

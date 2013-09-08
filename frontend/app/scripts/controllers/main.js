@@ -23,25 +23,3 @@ angular.module('frontendApp')
     ];
   });
 
-<<<<<<< Updated upstream
-=======
-angular.module('frontendApp')
-  .controller('SignupCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma',
-      'Apartmapp'
-    ];
-  });
-
-angular.module('frontendApp')
-  .controller('LoginCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma',
-      'Apartmapp'
-    ];
-  });
->>>>>>> Stashed changes
