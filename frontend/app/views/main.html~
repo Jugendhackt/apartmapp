@@ -56,13 +56,20 @@
 <li ng-show="error"><div class="alert-box alert round">IMMOSCOUT-FAIL</div></li>
   
 <li ng-repeat="result in searchResults"> 
-  <p>
-  {{result.description}}
-  </p> 
-  <p>
-  {{result.street}} {{result.houseNumber}}
-  </p>
-  </li>
+  <ul class="small-block-grid-2">
+    <li>
+      <img src="{{result.image_url}}">
+    </li>
+    <li>
+      {{result.description}}
+      <p>
+      {{result.street}} {{result.houseNumber}}, {{result.postcode}} {{result.city}}
+      <p>
+      <a href="{{result.information}}"><img src="images/informationen.png"></a>
+      </p>
+    </li>
+  </ul>
+</li>
   
   <!-- Fußzeile-->
 </ul>

@@ -11,6 +11,7 @@ def sanitize_is24(item):
     else:
         result['image_url'] = ''
     #import pdb; pdb.set_trace()
+    result['information'] = item['realEstateId']
     return result
 
 class ImmoScout24Api(object):
