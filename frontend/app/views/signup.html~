@@ -16,12 +16,12 @@
 			<br>  
  		 Username:
 			<br> 		 
- 		 <input name="username" type="username" size="35" maxlength="29"
+ 		 <input name="username" type="username" size="50" maxlength="29"
  		 	<br> 
 			<br> 
 			<br>   
 			<br>  
- 		 Kennwort:<input name="kennwort" type="password" size="30" maxlength="29"
+ 		 Kennwort:<input name="kennwort" type="password" size="35" maxlength="29"
  		 	<br> 
 			<br> 
 			<br>   
@@ -35,11 +35,16 @@
 	</li>
 </ul>
 		
-	<p>
-	<a href="#/" class="b" >Zurück zur Startseite</a>
-	</p>
-	<p>
-	<a href="#/login" class="a" >Zum login</a>
-	</p>
+<table summary="" >
+	<tr>
+		<td>
+		<a href="#/" class="b" >Zurück zur Startseite</a>
+		</td>
+		<td>
+		<a href="#/login" class="a">Zum login</a>
+		</td>
+	</tr>	
+</table>
+
 
  
