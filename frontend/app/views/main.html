@@ -51,6 +51,8 @@
 
 
 <ul class="large-block-grid-2 small-block-grid-2">
+<li ng-hide="error || searchResults"><div class="alert-box">Loading, please wait...</div></li>  
+<li ng-show="error"><div class="alert-box alert round">IMMOSCOUT-FAIL</div></li>
   <li ng-repeat="result in searchResults"> 
   <p>
   {{result.description}}
@@ -59,11 +61,7 @@
   {{result.street}} {{result.houseNumber}}
   </p>
   </li>
-  <li>
-  <a href="www.google.de"> 
-  		<img src="images/header.png" width="" height="" alt="">
-  </a>
-  </li>
+  
 </ul>
 
 <a href="">Registrieren</a>
