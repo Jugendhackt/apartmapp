@@ -20,13 +20,25 @@
 			<br> 
 			<br>   
 			<br>  
- 		 Kennwort:<input name="kennwort" type="password" size="12" maxlength="12"
+ 		 Kennwort:<input name="kennwort" type="password" size="35" maxlength="29"
 		</form>
 	</td>
 	</tr>
 </table>
 </div>
 		
+	<table summary="" >
+	<tr>
+		<td>
+		<a href="#/" class="b" >Zurück zur Startseite</a>
+		</td>
+		<td>
+		<a href="#/signup" class="a">Anmelden</a>
+		</td>
+	</tr>	
+</table>
+
+	
 	<p>
 	<a href="#/signup" class="a">Anmelden</a>
 	</p>
