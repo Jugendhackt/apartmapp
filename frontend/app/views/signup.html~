@@ -21,7 +21,7 @@
 			<br> 
 			<br>   
 			<br>  
- 		 Kennwort:<input name="kennwort" type="password" size="35" maxlength="29"
+ 		 Kennwort:<input name="kennwort" type="password" size="30" maxlength="29"
  		 	<br> 
 			<br> 
 			<br>   

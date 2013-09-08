@@ -20,7 +20,7 @@
 			<br> 
 			<br>   
 			<br>  
- 		 Kennwort:<input name="kennwort" type="password" size="35" maxlength="29"
+ 		 Kennwort:<input name="kennwort" type="password" size="12" maxlength="12"
 		</form>
 	</td>
 	</tr>
