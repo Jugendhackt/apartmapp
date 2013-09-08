@@ -53,7 +53,8 @@
 <ul class="large-block-grid-2 small-block-grid-2">
 <li ng-hide="error || searchResults"><div class="alert-box">Loading, please wait...</div></li>  
 <li ng-show="error"><div class="alert-box alert round">IMMOSCOUT-FAIL</div></li>
-  <li ng-repeat="result in searchResults"> 
+  
+<li ng-repeat="result in searchResults"> 
   <p>
   {{result.description}}
   </p> 
@@ -63,11 +64,6 @@
   </li>
   
 </ul>
-
-<<<<<<< HEAD
-<a href="">Registrieren</a>
-=======
-<HR>
 <table summary="" >
 	<tr>
 		<td>
@@ -84,4 +80,3 @@
 
 
 
->>>>>>> 14560ec4d1f766ee3c0577f3c50cb482c57edebd

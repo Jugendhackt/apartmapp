@@ -5,8 +5,11 @@ import json
 def sanitize_is24(item):
     result = item['resultlist.realEstate']['address']
     result['description'] = item['resultlist.realEstate'].get('title')
+    #import pdb; pdb.set_trace()
     if 'titlePicture' in item['resultlist.realEstate']:
-        result['image_url'] = item['resultlist.realEstate']['titlePicture']['@xlink.href']
+        result['image_url'] = item['resultlist.realEstate']['titlePicture']['urls'][0]['url'][1]['@href']
+    else:
+        result['image_url'] = ''
     #import pdb; pdb.set_trace()
     return result
 

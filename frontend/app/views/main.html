@@ -53,7 +53,8 @@
 <ul class="large-block-grid-2 small-block-grid-2">
 <li ng-hide="error || searchResults"><div class="alert-box">Loading, please wait...</div></li>  
 <li ng-show="error"><div class="alert-box alert round">IMMOSCOUT-FAIL</div></li>
-  <li ng-repeat="result in searchResults"> 
+  
+<li ng-repeat="result in searchResults"> 
   <p>
   {{result.description}}
   </p> 
@@ -69,7 +70,7 @@
 		<a href="#/signup">Registrieren</a>
 		</td>
 		<td>
-		<a href="">Impressum</a>
+		<a href="#/impressum">Impressum</a>
 		</td>
 		<td>
 		<a href="">Links</a>
