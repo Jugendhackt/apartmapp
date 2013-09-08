@@ -35,6 +35,7 @@
 	</li>
 </ul>
 		
+<<<<<<< Updated upstream
 <table summary="" >
 	<tr>
 		<td>
@@ -46,5 +47,13 @@
 	</tr>	
 </table>
 
+=======
+	<p>
+	<a href="#/" class="b" >Zurück zur Startseite</a>
+	</p>
+	<p>
+	<a href="#/login" class="a" align="right">Zum login</a>
+	</p>
+>>>>>>> Stashed changes
 
  
