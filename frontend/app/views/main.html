@@ -11,7 +11,7 @@
 	<a href="#/login" >
 	  <img src="images/email.png" alt="" >
     </a>
-  </li>
+      </li>
   <li>
     <a href="https://www.facebook.com" >
       <img src="images/fb.png" alt="" >
@@ -79,8 +79,13 @@
   <ul class="small-block-grid-2">
     <li>
       <img src="{{result.image_url}}">
+      {{result.description}}
+      <p>
+      {{result.street}} {{result.houseNumber}}, {{result.postcode}} {{result.city}}
     </li>
+    
     <li>
+    	<img src="{{result.image_url}}">
       {{result.description}}
       <p>
       {{result.street}} {{result.houseNumber}}, {{result.postcode}} {{result.city}}
