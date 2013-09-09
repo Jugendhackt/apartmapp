@@ -21,5 +21,13 @@ angular.module('frontendApp')
       'Karma',
       'Apartmapp'
     ];
+  })
+   .controller('NavCtrl', function ($scope) {
+    $scope.awesomeThings = [
+      'HTML5 Boilerplate',
+      'AngularJS',
+      'Karma',
+      'Apartmapp'
+    ];
   });
 

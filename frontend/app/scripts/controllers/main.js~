@@ -13,6 +13,14 @@ angular.module('frontendApp')
       'Karma',
       'Apartmapp'
     ];
+  .controller('LoginupfbCtrl', function ($scope) {
+    $scope.awesomeThings = [
+      'HTML5 Boilerplate',
+      'AngularJS',
+      'Karma',
+      'Apartmapp'
+    ];
+  })
   })
  .controller('SignupCtrl', function ($scope) {
     $scope.awesomeThings = [
@@ -21,12 +29,8 @@ angular.module('frontendApp')
       'Karma',
       'Apartmapp'
     ];
-  });
-
-<<<<<<< Updated upstream
-=======
-angular.module('frontendApp')
-  .controller('SignupCtrl', function ($scope) {
+  })
+   .controller('NavCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -35,13 +39,3 @@ angular.module('frontendApp')
     ];
   });
 
-angular.module('frontendApp')
-  .controller('LoginCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma',
-      'Apartmapp'
-    ];
-  });
->>>>>>> Stashed changes
