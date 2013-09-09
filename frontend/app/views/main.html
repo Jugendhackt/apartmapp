@@ -13,15 +13,12 @@
     </a>
   </li>
   <li>
-<<<<<<< Updated upstream
     <a href="http://www.google.de/" >
       <img src="images/fb.png" alt="" >
     </a>
   </li>
-=======
     <a href="https://www.facebook.com" >
   <img src="images/fb.png" alt="" ></li>
->>>>>>> Stashed changes
 </ul>
 
   <!--Beschreibung-->
@@ -43,7 +40,9 @@
             <form action="input_password.htm">
 			  <table>
 			    <tr>
-				  <td>Stadt:<br><input name="" type="stadt" size="12" maxlength="12"></td>
+				  <td>Stadt:<br>
+				    <input name="" type="stadt" size="12" maxlength="12">
+				  </td>
 				  <td>
 				    <a href="" >
   				      <img src="images/suchen_b.png" alt="hi" >
@@ -70,8 +69,13 @@
 
   <!--Serverabfrage-->
 <ul class="large-block-grid-2 small-block-grid-2">
-<li ng-hide="error || searchResults"><div class="alert-box">Loading, please wait...</div></li>  
-<li ng-show="error"><div class="alert-box alert round">IMMOSCOUT-FAIL</div></li>
+  <li ng-hide="error || searchResults">
+    <div class="alert-box">Loading, please wait...</div>
+  </li>  
+  <li ng-show="error">
+    <div class="alert-box alert round">IMMOSCOUT-FAIL</div>
+  </li>
+</ul>
   
 <li ng-repeat="result in searchResults"> 
   <ul class="small-block-grid-2">
