@@ -4,9 +4,14 @@ angular.module('frontendApp')
   .controller('MainCtrl', function ($scope, $http) {
     $scope.searchResults = [];
     $scope.error = false;
-    $http.get('/-/search').success( function(data, status, headers, config) { $scope.searchResults = data.results; }
-    ).error( function(data, status, headers, config) { $scope.error = true; }); })
- .controller('LoginCtrl', function ($scope) {
+    $http.get('/-/search').success( function(data) {
+      $scope.searchResults = data.results;
+    }
+    ).error(function() {
+      $scope.error = true;
+    });
+  })
+  .controller('LoginCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
