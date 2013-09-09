@@ -11,8 +11,7 @@ angular.module('frontendApp', ['leaflet-directive'])
         templateUrl: 'views/login.html',
         controller: 'LoginCtrl'
       })
-
-      .when('/signup', {
+		.when('/signup', {
         templateUrl: 'views/signup.html',
         controller: 'SignupCtrl'
       })
