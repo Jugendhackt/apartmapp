@@ -2,7 +2,7 @@
 # please rename and start hacking...
 
 from transaction import commit
-from restbase import configure as base_configure, db_setup, utils
+from restbase import configure as base_configure, db_setup
 from appartmapp.immoscoutapi import ImmoScout24Api
 
 
