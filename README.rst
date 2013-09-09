@@ -8,6 +8,7 @@ Die Anwendung ist als client/server ausgelegt. Der Server ist in Python geschrie
 
 Der Client ist eine Javascript Anwendung, die auf das `AngularJS framework <http://angularjs.org>`_ zurückgreift.
 
+Eine (meist) aktuelle Version kann unter `http://appartmapp.schoolhackers.de/` erreicht werden.
 
 ============
 Installation
@@ -30,3 +31,4 @@ Danch kann im ``frontend`` Verzeichnis ``make`` aufgerufen werden::
 Jetzt kann die Application mit ``grunt server`` gestartet werden.
 
 Die Angular Anwendung wurde mit `yeoman <http://yeoman.io>`_ erstellt und die damit erzeugte Struktur ist auf `dieser Seite <https://github.com/yeoman/generator-angular>`_ ganz gut dokumentiert.
+
