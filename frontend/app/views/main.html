@@ -53,6 +53,10 @@
 <li ng-hide="error || searchResults"><div class="alert-box">Loading, please wait...</div></li>  
 <li ng-show="error"><div class="alert-box alert round">IMMOSCOUT-FAIL</div></li>
   
+<li>
+  <leaflet width="640" height="480"></leaflet>
+</li>
+
 <li ng-repeat="result in searchResults"> 
   <ul class="small-block-grid-2">
     <li>
@@ -69,6 +73,6 @@
   </ul>
 </li>
 </ul>
- <leaflet width="640" height="480"></leaflet>
+
 
 
