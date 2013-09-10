@@ -8,18 +8,18 @@
   <!--Login-->
 <ul class="small-block-grid-2" style="margin:auto;">
   <li>
-	<a href="#/login" >
-	  <img src="images/email.png" alt="" >
+  	<a href="#/login" >
+	   <img src="images/email.png" alt="" />
     </a>
-      </li>
+  </li>
   <li>
     <a href="https://www.facebook.com" >
-      <img src="images/fb.png" alt="" >
+      <img src="images/fb.png" alt="" />
 	</a>
   </li>
 </ul>
 
-  <!--Beschreibung-->
+<!--Beschreibung-->
 <ul class="small-block-grid-1 large-block-grid-1">
   <li>
     <img src="images/info_box.png" alt="" >
@@ -32,7 +32,6 @@
   	<a href="#" data-dropdown="drop5" class="button dropdown expand">
   		<img src="images/suchen.png" alt="" >
   	</a>
-  	  <br>
   		<ul id="drop5" data-dropdown-content class="f-dropdown" style="position: absolute; top: 297px; left: -99999px;">
           <li>
             <form action="input_password.htm">
@@ -56,7 +55,7 @@
           <li>
 		    <a href="#">Yet another</a>
 	      </li>
-  		</ul>
+  	</ul>
   </li>
   <li>
     <a href="http://www.google.de/"> 
@@ -65,7 +64,6 @@
   </li>
 </ul>
 
-  <!--Serverabfrage-->
 <ul class="large-block-grid-2 small-block-grid-2">
   <li ng-hide="error || searchResults">
     <div class="alert-box">Loading, please wait...</div>
@@ -75,17 +73,23 @@
   </li>
 </ul>
   
-<li ng-repeat="result in searchResults"> 
-  <ul class="small-block-grid-2">
-    <li>
-      <img src="{{result.image_url}}">
-      {{result.description}}
-      <p>
-      {{result.street}} {{result.houseNumber}}, {{result.postcode}} {{result.city}}
-	  </p>
-	  <p>
-        <a href="http://www.immobilienscout24.de/expose/{{result.information}}"><img src="images/informationen.png"></a>
-      </p>
-    </li>
-  </ul>
-</li>
+<ul class="large-block-grid-2 small-block-grid-2">
+  <li>
+    <leaflet width="640" height="480"></leaflet>
+  </li>
+
+  <li ng-repeat="result in searchResults"> 
+    <ul class="small-block-grid-2">
+      <li>
+        <img src="{{result.image_url}}">
+        {{result.description}}
+        <p>
+        {{result.street}} {{result.houseNumber}}, {{result.postcode}} {{result.city}}
+  	  </p>
+  	  <p>
+          <a href="http://www.immobilienscout24.de/expose/{{result.information}}"><img src="images/informationen.png"></a>
+        </p>
+      </li>
+    </ul>
+  </li>
+</ul>
