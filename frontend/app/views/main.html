@@ -32,7 +32,7 @@
   	<a href="#" data-dropdown="drop5" class="button dropdown expand">
   		<img src="images/suchen.png" alt="" >
   	</a>
-  		<ul id="drop5" data-dropdown-content class="f-dropdown" style="position: absolute; top: 297px; left: -99999px;">
+  		<ul id="drop5" data-dropdown-content class="f-dropdown" style="position: absolute; top: 297px; left: -99999px; width: 300px;">
           <li>
             <form action="input_password.htm">
 			  <table>
@@ -46,14 +46,39 @@
 					</a>
 				  </td>
 				</tr>
+				
+				/*Verkehrsfilter*/
 				 <tr>
-				  <td>Stadt:<br>
-				    <input type="checkbox" name="suchfilter" value="nahverker_haltestellen">
+				  <td> 
+				  	 <p>
+					 Wollen sie in der nähe eines Nahverkehranschlusses wohnen?	  	 
+				  	 </p>
+				    <input type="checkbox" name="suchfilter" value="nahverker_haltestellen"> 
 				  </td>
 				  <td>
+				    <p>
+					 Wollen sie in der nähe eines Fernverkehrsanschlusses wohnen?		  	 
+				  	 </p>
 				  	 <input type="checkbox" name="suchfilter" value="fernverker_haltestellen">
 				  </td>
 				</tr>
+				
+				
+				<tr>
+				  <td> 
+				  	 <p>
+					 Wollen sie in der nähe einer Grundschule wohnen?		  	 
+				  	 </p>
+				    <input type="checkbox" name="suchfilter" value="grundschulen"> 
+				  </td>
+				  <td>
+				    <p>
+					  Wollen sie in der nähe einer weiterführenden Schule wohnen?		  	 
+				  	 </p>
+				  	 <input type="checkbox" name="suchfilter" value="weiterführende_schulen">
+				  </td>
+				</tr>
+				
 			  </table>  					
   			</form> 		 
   	</ul>
