@@ -38,7 +38,7 @@ angular.module('frontendApp')
         {$scope.markers.push({
           lat : $scope.otherResults[i][4],
           lng : $scope.otherResults[i][5],
-        });
+        });}
         //var marker1 = L.marker([$scope.searchResults[i]["wgs84Coordinate"]['latitude'], $scope.searchResults[i]['wgs84Coordinate']['longitude']]).addTo(leaflet);
         //var marker1 = L.marker([entry['wgs84Coordinate']['latitude'], entry['wgs84Coordinate']['longitude']]).addTo(map);
       }

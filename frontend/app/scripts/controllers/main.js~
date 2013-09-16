@@ -34,7 +34,8 @@ angular.module('frontendApp')
       $scope.otherResults = data.results;
       for (var i=0;i<$scope.otherResults.length;i++) {
         //console.log($scope.otherResults[i])
-        $scope.markers.push({
+        if ($scope.otherResults[i][4]<52 && $scope.otherResults[i][4]>50) 
+        {$scope.markers.push({
           lat : $scope.otherResults[i][4],
           lng : $scope.otherResults[i][5],
         });
