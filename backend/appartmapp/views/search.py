@@ -14,8 +14,8 @@ def query(request):
 	if "lng" in request.GET:
 		lng=request.GET["lng"]
 	else:
-		lat="10.5"
-	results = request.registry['is24api'].radius_search('apartmentrent', request.GET['lat'],request.GET['lng'],'500')
+		lng="10.5"
+	results = request.registry['is24api'].radius_search('apartmentrent', lat, lng, '500')
 	results = results['resultlist.resultlist']['resultlistEntries'][0]['resultlistEntry']
 	results = [sanitize_is24(item) for item in results]
 	#import pdb; pdb.set_trace()
