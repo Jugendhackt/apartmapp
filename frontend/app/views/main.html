@@ -125,19 +125,4 @@
   <li>
     <leaflet width="640" height="480" markers="markers" center="center"></leaflet>
   </li>
-
-  <li ng-repeat="result in searchResults"> 
-    <ul class="small-block-grid-2">
-      <li>
-        <img src="{{result.image_url}}">
-        {{result.description}}
-        <p>
-        {{result.street}} {{result.houseNumber}}, {{result.postcode}} {{result.city}}
-  	    </p>
-  	    <p>
-          <a href="http://www.immobilienscout24.de/expose/{{result.information}}"><img src="images/informationen.png"></a>
-        </p>
-      </li>
-    </ul>
-  </li>
 </ul>
