@@ -166,7 +166,46 @@ angular.module('frontendApp')
       $scope.error = true;
     });
   });
-    
+  $scope.recheck = (function() {
+    console.log($scope.markers)
+    $scope.markers = [];
+    console.log($scope.markers)
+    $scope.otherResults = [];
+    $scope.error = false;
+    console.log("hi")
+    $http.get('/-/others', {
+      params: {lng : $scope.center.lng,
+               lat : $scope.center.lat,
+               dist : 0.5}}).success( function(data) {
+      $scope.otherResults = data.results;
+      for (var i=0;i<$scope.otherResults.length;i++) {
+        if ($scope[$scope.otherResults[i][2]] == true)
+        {
+        console.log($scope.otherResults[i])
+        console.log($scope[$scope.otherResults[i][2]])
+
+        $scope.markers.push({
+          lat : $scope.otherResults[i][4],
+          lng : $scope.otherResults[i][5],
+          message : $scope.otherResults[i][4] + $scope.otherResults[i][5],
+          icon: L.icon({
+                    iconUrl: 'images/' + $scope.otherResults[i][3],
+                    iconSize: [80, 80],
+                    iconAnchor: [40, 80],
+                    popupAnchor: [0, 0],
+                    shadowSize: [0, 0],
+                    shadowAnchor: [0, 0]
+                })
+          });
+        }
+        //var marker1 = L.marker([$scope.searchResults[i]["wgs84Coordinate"]['latitude'], $scope.searchResults[i]['wgs84Coordinate']['longitude']]).addTo(leaflet);
+        //var marker1 = L.marker([entry['wgs84Coordinate']['latitude'], entry['wgs84Coordinate']['longitude']]).addTo(map);
+      }
+    }
+    ).error(function() {
+      $scope.error = true;
+    });
+  });
   })
   .controller('LoginCtrl', function ($scope) {
     $scope.awesomeThings = [

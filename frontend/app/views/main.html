@@ -34,34 +34,21 @@
   	</a>
   		<ul id="drop5" data-dropdown-content class="f-dropdown" style="position: absolute; top: 297px; left: -99999px; width: 600px;">
           <li>
-            <form action="input_password.htm">
+            <form name="filter" ng-controller="MainCtrl">
 			  <table>
-			    <tr>
-				  <td>Stadt:<br>
-				    <input name="" type="stadt" size="12" maxlength="12">
-				  </td>
-				  <td>
-				    <a href="" >
-  				      <img src="images/suchen_b.png" alt="hi" >
-					</a>
-				  </td>
-				</tr>
-				
 				<!--Verkehrsfilter-->
 				 <tr>
 				  <td> 
 				  	 <p>
 					 Wollen sie in der nähe eines Nahverkehranschlusses wohnen?	  	 
 				  	 </p>
-				    <input type="checkbox" name="suchfilter" value="nahverker_haltestellen">
-				    <span onclick="(true)" onclick="refresh"></span> 
+				    <input type="checkbox" name="nahverker_haltestellen">
 				  </td>
 				  <td>
 				    <p>
-					 Wollen sie in der nähe eines Fernverkehrsanschlusses wohnen?		  	 
+					 Wollen sie Fernverkehrsanschlüsse sehen?		  	 
 				  	 </p>
-				  	 <input type="checkbox" name="suchfilter" value="fernverker_haltestellen">
-				  	  <span onclick="(true)" onclick="refresh"></span> 
+				  	 <input type="checkbox" name="dbstop" ng-model="dbstop">
 				  </td>
 				</tr>
 				
@@ -71,15 +58,14 @@
 				  	 <p>
 					 Wollen sie in der nähe einer Grundschule wohnen?		  	 
 				  	 </p>
-				    <input type="checkbox" name="suchfilter" value="grundschulen"> 
+				    <input type="checkbox" name="grundschulen"> 
 				     <span onclick="(true)" onclick="refresh"></span> 
 				  </td>
 				  <td>
 				    <p>
 					  Wollen sie in der nähe einer weiterführenden Schule wohnen?		  	 
 				  	 </p>
-				  	 <input type="checkbox" name="suchfilter" value="weiterführende_schulen">
-				  	  <span onclick="(true)" onclick="refresh"></span> 
+				  	 <input type="checkbox" name="weiterführende_schulen">
 				  </td>
 				</tr>
 				
@@ -89,18 +75,20 @@
 				  	 <p>
 					 Wollen sie Kraftwerke einblenden?		  	 
 				  	 </p>
-				    <input type="checkbox" name="suchfilter" value="kraftwerke"> 
-				     <span onclick="(true)" onclick="refresh"></span> 
+				    <input type="checkbox" name="kraftwerke"> 
 				  </td>
 				  <td>
 				    <p>
 					  Wollen sie die maiximale Internet Verbindung in ihrer Umgebung angezeigt bekommen?		  	 
 				  	 </p>
-				  	 <input type="checkbox" name="suchfilter" value="internet">
-				  	  <span onclick=""="(true)" onclick="refresh"></span> 
+				  	 <input type="checkbox" name="internet">
 				  </td>
 				</tr>
-				
+				<tr>
+				  	<td>
+  				      	<img src="images/suchen_b.png" ng-click="recheck()">
+				  	</td>
+				</tr>
 			  </table>  					
   			</form> 		 
   	</ul>
@@ -113,7 +101,7 @@
 </ul>
 
 <ul class="large-block-grid-2 small-block-grid-2">
-  <li ng-hide="error || searchResults">
+  <li ng-hide="error || (searchResults || otherResults)">
     <div class="alert-box">Loading, please wait...</div>
   </li>  
   <li ng-show="error">
