@@ -125,7 +125,15 @@ angular.module('frontendApp')
         $scope.markers.push({
           lat : $scope.otherResults[i][4],
           lng : $scope.otherResults[i][5],
-          message : $scope.otherResults[i][4] + $scope.otherResults[i][5]
+          message : $scope.otherResults[i][4] + $scope.otherResults[i][5],
+          icon: L.icon({
+                    iconUrl: 'images/' + $scope.otherResults[i][3],
+                    iconSize: [80, 80],
+                    iconAnchor: [40, 80],
+                    popupAnchor: [0, 0],
+                    shadowSize: [0, 0],
+                    shadowAnchor: [0, 0]
+                })
         });
         //var marker1 = L.marker([$scope.searchResults[i]["wgs84Coordinate"]['latitude'], $scope.searchResults[i]['wgs84Coordinate']['longitude']]).addTo(leaflet);
         //var marker1 = L.marker([entry['wgs84Coordinate']['latitude'], entry['wgs84Coordinate']['longitude']]).addTo(map);
