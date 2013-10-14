@@ -41,7 +41,7 @@ angular.module('frontendApp')
           icon: L.icon({
                     iconUrl: 'images/' + $scope.otherResults[i][3],
                     iconSize: [80, 80],
-                    iconAnchor: [40, 80],
+                    iconAnchor: [40, 40],
                     popupAnchor: [0, 0],
                     shadowSize: [0, 0],
                     shadowAnchor: [0, 0]
@@ -96,7 +96,7 @@ angular.module('frontendApp')
           icon: L.icon({
                     iconUrl: 'images/' + $scope.otherResults[i][3],
                     iconSize: [80, 80],
-                    iconAnchor: [40, 80],
+                    iconAnchor: [40, 40],
                     popupAnchor: [0, 0],
                     shadowSize: [0, 0],
                     shadowAnchor: [0, 0]
@@ -152,7 +152,7 @@ angular.module('frontendApp')
           icon: L.icon({
                     iconUrl: 'images/' + $scope.otherResults[i][3],
                     iconSize: [80, 80],
-                    iconAnchor: [40, 80],
+                    iconAnchor: [40, 40],
                     popupAnchor: [0, 0],
                     shadowSize: [0, 0],
                     shadowAnchor: [0, 0]
@@ -191,7 +191,7 @@ angular.module('frontendApp')
           icon: L.icon({
                     iconUrl: 'images/' + $scope.otherResults[i][3],
                     iconSize: [80, 80],
-                    iconAnchor: [40, 80],
+                    iconAnchor: [40, 40],
                     popupAnchor: [0, 0],
                     shadowSize: [0, 0],
                     shadowAnchor: [0, 0]
