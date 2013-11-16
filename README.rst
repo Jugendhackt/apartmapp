@@ -2,7 +2,7 @@
 AppartMapp
 ==========
 
-``appartmapp`` Appartmapp ist eine Plattform auf der du deine neue Wohnung, dein neues Haus etc. nach ganz besonderen Kriteren, wie z.B. Internetanschluss, Bus- / Bahnanbindung, Schulen und Kindergärten in der Nähe und vielen mehr finden kannst und im Rahmen von `2013 Jugend Hackt <http://hacks.youngrewiredstate.org/events/yrsberlin>`_ entstanden. 
+``appartmapp`` Appartmapp ist eine Plattform, auf der du deine neue Wohnung, dein neues Haus etc. nach ganz besonderen Kriteren, wie z.B. Internetanschluss, Bus- / Bahnanbindung, Schulen und Kindergärten in der Nähe und vielen mehr finden kannst und im Rahmen von `2013 Jugend Hackt <http://hacks.youngrewiredstate.org/events/yrsberlin>`_ entstanden. 
 
 Die Anwendung ist als client/server ausgelegt. Der Server ist in Python geschrieben mit Hilfe des `Pyramid  frameworks <http://docs.pylonsproject.org/projects/pyramid/en/1.4-branch/>`_ und spricht fliessend REST.
 
