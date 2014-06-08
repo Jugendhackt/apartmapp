@@ -8,7 +8,7 @@ Die Anwendung ist als client/server ausgelegt. Der Server ist in Python geschrie
 
 Der Client ist eine Javascript Anwendung, die auf das `AngularJS framework <http://angularjs.org>`_ zurückgreift.
 
-~~Eine (meist) aktuelle Version kann unter `http://appartmapp.schoolhackers.de/` erreicht werden.~~
+~Eine (meist) aktuelle Version kann unter `http://appartmapp.schoolhackers.de/` erreicht werden.~
 
 ============
 Installation
